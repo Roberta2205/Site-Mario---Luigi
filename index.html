@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Playwrite+MX+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <title>Mario Bross</title>
+</head>
+
+<body>
+    <div class="mascara-formulario" onclick="esconderForm()"></div>
+
+    <header class="header">
+        <img src="./assets/logo-header.png">
+        <a>Home</a>
+        <a>Nossos serviços</a>
+        <a>Fale conosco</a>
+    </header>
+
+
+    <div class="caixa-principal">
+        <div class="sobre-nos">
+            <img class="logo-mario" src="./assets/logo.png">
+            <p>Encanadores Mario & Luigi | Resolvendo seus problemas hidráulicos com estilo e sabedoria.</p>
+            <p>Você já se encontrou com alguma situação de emergência em encanamentos?
+                Vazamentos inesperados, canos entupidos ou torneiras que simplesmente não param de pingar?
+                Não se preocupe, porque estamos aqui para salvar seu dia! Apresento-lhes os melhores Encanadores
+                e os mais famosos do reino dos cogumelos: Mario e Luigi.</p>
+
+            <button onclick="mostrarForm()">Entre em contato</button>
+        </div>
+
+
+        <div>
+            <img class="img-mario" src="./assets/mario.png">
+        </div>
+
+    </div>
+
+    <div class="video-apresentação">
+        <video src="./assets/video.mp4" autoplay muted loop></video>
+        <div class="mascara"></div>
+    </div>
+
+    <a href="https://wa.me//5551995165129">
+        <img class="img-whatsapp" src="./assets/logo whatsapp.png" alt="link para whatsapp">
+    </a>
+
+    <form 
+            class="formulario-fale-conosco" 
+            action="https://formcarry.com/s/c7kcwo8hbeh"
+            method="POST"
+            enctype="multipart/form-data">
+            <input placeholder="Nome completo" type="text" name="nome">
+            <input placeholder="Telefone para contato" type="tel" name="telefone">
+            <textarea placeholder="Nos conte seu problema" name="duvidas"></textarea>
+            <button type="submit">Solicitar orçamento</button>
+    </form>
+
+</body>
+<script src="./scripts.js"></script>
+</html>
